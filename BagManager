@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class BagManager {
+  public static ArrayList<Bag> bagList = new ArrayList<Bag>();
+	
+	public static ArrayList<String> getNames(){
+		ArrayList<String> names = new ArrayList<String>();
+		for(int i = 0; i < bagList.size(); i++){
+			names.add(i, bagList.get(i).name());
+		}
+		return names;
+	}
+}
